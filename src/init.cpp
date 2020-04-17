@@ -1767,7 +1767,11 @@ bool AppInitMain(boost::thread_group& threadGroup, CScheduler& scheduler)
     uiInterface.InitMessage(_("Loading English (KJV) Bible..."));
     initkjv();
     uiInterface.InitMessage(_("Loading Chinese (CNV) Bible..."));
-	initcnv();
+    initcnv();
+    uiInterface.InitMessage(_("Loading Russian (RST) Bible..."));
+    initrst();
+    uiInterface.InitMessage(_("Loading Ukranian (UTO) Bible..."));
+    inituto();
 
 	// Load Researchers into RAM
 	uiInterface.InitMessage(_("Loading PODC Researchers..."));
